@@ -1,0 +1,911 @@
+html {
+  scroll-behavior: smooth
+}
+
+.entirebody {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: black;
+}
+
+
+.mainbody {
+  position: sticky;
+  margin-bottom: 100vh;
+}
+/*SIDEBAR MENU CSS */
+
+.sidemenu {
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  left:-400px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidemenu960pxBP {
+  width: 280px;
+  padding:20px;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  left:-320px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.smhiddenright {
+  display: flex;
+  justify-content: end;
+}
+.closemenuicon {
+  width: 18px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  cursor: pointer;
+}
+.sidemenulist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidemenuitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 60px;
+  padding-left: 20px;
+}
+.sidemenuitemstext {
+  font-size: 13px;
+  flex-wrap: nowrap;
+  width: 200px;
+}
+
+
+/*IMAGES SIDE MENU */
+.menuiconimg {
+  width: 20px;
+}
+.greaterthansymbolimg {
+  width: 7px;
+}
+
+.sidemenutextsingle {
+  font-family: Helvetica, Open-Sans;
+  padding-left: 60px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.sidemenutextsingle2 {
+  font-family: "ABChanel Corpo Semi Bold";
+  padding-left: 60px;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+/*HEADER CSS */
+
+.headermain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.headernavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:75px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  background-color: white;
+  border-top: 13px solid black;
+}
+.navbarcontainer {
+  display: flex;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+.fillersection {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.hiddenmenuicontext {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+.menutext {
+  font-family:"ABChanel Corpo Semi Bold" ;
+  font-size: 14px;
+  padding-left: 18px;
+  padding-bottom: 4px;
+}
+.hiddensearchicon {
+  width: 14px;
+  display: none;
+}
+li {
+  list-style: none;
+}
+.logocontainer {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+.logoimg {
+  width: 18.5vh;
+}
+
+/*RIGHT NAVIGATION SECTION CSS */
+
+.rightnavigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+}
+.rightnaviconcontainer {
+  min-width: 100px;
+}
+.topnaviconsearch {
+  width: 14px;
+}
+.topnaviconprofile {
+  width: 14px;
+}
+.topnaviconfavorite {
+  width: 14px;
+}
+.topnaviconcart {
+  width: 14px;
+}
+
+/* NAVIGATION LINKS CSS */
+
+.headernavigationlinks a {
+  font-size: clamp(12.5px, 12.5px, 12.5px); /* Define a specific font size range */
+}
+
+.headernavlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 88px;
+  background-color: white;
+  z-index: 1;
+  transition: transform 0.13s;
+  min-width: 100%;
+}
+
+.headernavigationlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  position: relative;
+  width:100%;
+}
+.topheaderlinkscontainer {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  justify-content: center;
+  color: black;
+  font-size: 0.65vw;
+  font-family: "ABChanel Corpo Semi Bold";
+  font-weight: bolder;
+  font-style: normal;
+}
+ 
+.navlinktext {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.65vw,0.65vw,0.65vw)
+  font-family: "ABChanel Corpo Semi Bold";
+  font-weight: bolder;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+
+.navlinktext:hover {
+
+}
+
+/* NAV LINKS ANIMATION JAVASCRTIPT*/
+.scrolldown {
+  transform:translateY(-120px) ;
+  z-index: 1;
+  padding-top: 0px;
+  animation-duration: 1s;
+}
+
+.scrollup {
+  
+}
+
+
+/*GALLERY CSS*/
+
+.gallerysection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.gallerycontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 72.5vh;
+  overflow: hidden;
+  align-items: center;
+
+}
+.atagcontainer {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+.galleryimg {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+.galleryimg1 {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+  top: -40px;
+
+}
+.galleryimg8 {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.gallery1textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  padding-bottom: 10vh;
+  height: 90px;
+  min-width: 200px;
+  text-align: center;
+}
+.gallery1text {
+  color: white;
+  z-index: 3;
+  font-size: 3vh;
+  padding-bottom: 2vh;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 25px;
+  width: auto;
+}
+.gallery1textsmall {
+  color: white;
+  z-index: 3;
+  font-size: 1.5vh;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 80%);
+  font-size: 12px;
+}
+
+.buttoncontainer {
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.anchorbuttoncontainer {
+  width: 100%;
+}
+.seemorebutton {
+  color: black;
+  font-size: 14px; /* Fixed font size in pixels */
+  font-family: "ABChanel Corpo Semi Bold";
+  font-weight: bolder;
+  font-style: normal;
+  padding: 8px; /* Fixed padding in pixels */
+  border: none;
+  min-width: 130px; /* Set a minimum width for the button */
+  max-width: 130px; /* Set a maximum width for the button */
+  height: 40px; /* Set a fixed height for the button */
+}
+
+
+/* SMALL FOOTER CSS */
+
+.smallfootercontainer {
+  height: 20%;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.smallfootercolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20vw;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.smallfootercolumnlast {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20vw;
+  padding-bottom: 10px;
+  padding-right: 15px;
+ 
+}
+.smallfootercolumncontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+}
+.smallfootertexttitle  {
+  display: flex;
+  justify-content: space-between;
+  font-family: "ABChanel Corpo Semi Bold";
+  font-size: 12px;
+  margin:0px;
+  height: auto;
+  width: auto;
+
+}
+
+.smallfootertext {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height:15px;
+  color: rgb(128, 128, 128);
+  margin: 0px;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.smallfootertextanimationcontainer {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height:15px;
+  color: rgb(128, 128, 128);
+  margin: 0px;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.smallfooterlinkscontainer {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height:14px;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  height: auto;
+  width: auto;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  text-decoration: underline;
+}
+.smallfooterlinktext {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height:15px;
+  color: rgb(128, 128, 128);
+  margin: 0px;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: underline;
+  flex-wrap: nowrap;
+}
+
+.smallfootertextwithanimation {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height:15px;
+  color: rgb(128, 128, 128);
+  margin: 0px;
+  height: auto;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+
+}
+.smallfooterinput {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.smallfooterinput:focus {
+  outline: none;
+}
+
+.smallfooterinput:focus + .formtextanimation {
+  transform: translateY(-20px);
+  font-size: 10.2px;
+}
+
+
+.formtextanimation {
+  display: flex;
+  position: absolute;
+  margin: 0px;
+  pointer-events: none;
+  padding-left: 2.3px;
+  animation-duration: 1s;
+}
+.arrowdownfooter {
+  width: 15px;
+  display: none;
+  opacity: 0.6;
+}
+
+/* END SECTION */
+
+
+.endsection {
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+
+}
+
+.footernav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10vw;
+  padding-top: 15vh;
+}
+.footerlogoanchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+  height: 10vh;
+  width: 18vh;
+}
+
+.footerlogocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoimgfooter {
+  width: 100%;
+  object-fit: cover;
+}
+.footercolumncontainermain {
+  width: 100%;
+}
+
+.footercolumncontainer {
+  display: flex;
+  gap: 7vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  justify-content: center;
+}
+.footercolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footercolumntitle {
+  color: white;
+  font-family: "ABChanel Corpo Semi Bold";
+  font-weight: lighter;
+  font-size: 15px; }
+.footercolumntext {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 14px; }
+
+/*animations*/
+
+
+
+
+
+@media (max-width: 1255px) {
+  .headernavlinks {
+    display: none;
+  }
+  .hiddenmenuicontext {
+    display: flex;
+  }
+}
+
+@media (max-width: 977px) {
+
+}
+
+@media (max-width: 960px) {
+
+  #sidemenu {
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    left:-320px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+  .closemenuicon {
+    padding-right: 0px;
+  }
+  .sidemenuitems {
+    padding: 0px;
+  }
+  .sidemenulist {
+    padding-left: 0px;
+  }
+
+  .sidemenutextsingle {
+    padding-left: 0px;
+  }
+  .sidemenutextsingle2 {
+    padding-left: 0px;
+  }
+  .logoimg {
+    width: 13.5vh;
+  }
+  .navbarcontainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menutext {
+    display: none;
+  }
+  .hiddensearchicon {
+    display: flex;
+  }
+  .topnaviconsearch {
+    display: none;
+  }
+  .topnaviconprofile {
+    display: none;
+  }
+
+  .mainbody {
+    margin: 0px;
+  }
+  .endsection {
+    position: relative;
+  }
+  .footercolumncontainermain {
+    width: 100%;
+    display: flex;
+  }
+  .footercolumncontainer {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    width: 100%;
+    gap: 5px 100px;
+    padding: 0px;
+  }
+  .footercolumn {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+
+
+}
+
+
+@media (max-width:600px) {
+  .mainbody {
+    margin-bottom: 0px;
+  }
+  .smallfootercontainer {
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .smallfootercolumncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+
+  }
+  .arrowdownfooter {
+    display: flex;
+  }
+  .footercolumncontainermain {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .footercolumncontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    padding-left: 25px;
+  }
+  .footercolumn {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding-bottom: 30px;
+  }
+  .footercolumntitle {
+    padding-bottom: 15px;
+  }
+  .smallfootercolumnlast {
+    width: 100%;
+  }
+  .smallfootercolumn {
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+  }
+  .smallfootertexttitle  {
+    font-family: "ABChanel Corpo Semi Bold";
+    font-size: 1.5vh;
+    margin:0px;
+    height: auto;
+    width: auto;
+    padding-top: 27px;
+    padding-bottom: 20px;
+  }
+  .endsection {
+    position: relative;
+  }
+  .smallfootertext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.5vh;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5vh;
+    color: rgb(128, 128, 128);
+    margin: 0px;
+    height: auto;
+    width: auto;
+    display: none;
+
+  }
+  .smallfooterlinkscontainer {
+    display: none;
+  }
+  .smallfootertextwithanimation {
+    display: none;
+  }
+  .smallfootertextanimationcontainer {
+    display: none;
+  }
+  
+  .footernav {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* gallery 600px media query */
+
+.gallerycontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80.5vh;
+  overflow: hidden;
+  align-items: center;
+
+}
+
+}
+
+
+/* SIDEMENU BREAKPOINT*/
+
+
+@media (max-width: 315px) {
+
+}
+
+
+
+
+/* ANIMATIONS */
+
+@keyframes slideOut {
+
+  0% {
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(400px);
+  }
+}
+
+@keyframes slideIn {
+  0%{
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+
+
+/* ON CLICK CLASS LIST ADD CLASSES */
+
+.animatedSlideOut {
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 0.4s;
+  animation-name: slideOut;
+  animation-fill-mode: forwards;
+}
+
+.animatedSlideIn {
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 1s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+}
+
+.bodyOnMenuOpen {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: black;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+
+
+
+/* JAVASCRIP SIDEMENU BREAKPOINT */
+
+
+@keyframes slideOut900px {
+
+  0% {
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(320px);
+  }
+}
+
+@keyframes slideIn900px {
+  0%{
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-320px);
+  }
+}
+
+.animatedSlideOut900px {
+  width: 280px;
+  padding: 20px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 0.4s;
+  animation-name: slideOut900px;
+  animation-fill-mode: forwards;
+}
+
+.animatedSlideIn900px {
+  width: 280px;
+  left: -320px;
+  padding: 20px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 1s;
+  animation-name: slideIn900px;
+  animation-fill-mode: forwards;
+}
